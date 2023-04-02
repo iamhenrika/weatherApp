@@ -56,7 +56,7 @@ function handleSubmit(event) {
 
 function searchLocation(position) {
   let apiKey = "bc5ca568ee2d7c71357ca430a3ff8705"
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(displayWeatherCondition);
 }
@@ -65,18 +65,6 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-
-// function convertToFahrenheit(event) {
-//   event.preventDefault();
-//   let temperatureElement = document.querySelector("#temperature");
-//   temperatureElement.innerHTML = 66;
-// }
-
-// function convertToCelsius(event) {
-//   event.preventDefault();
-//   let temperatureElement = document.querySelector("#temperature");
-//   temperatureElement.innerHTML = 19;
-// }
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
