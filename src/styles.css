@@ -55,6 +55,16 @@ li {
 }
 
 .btn {
-  background-color: #bae8e8 ;
+  background-color: #bae8e8;
   color: #272343;
+}
+
+footer img {
+  width: 80px;
+  height: 80px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
