@@ -1,6 +1,6 @@
 # weatherApp
  
- a react weather app that shows the 5 day forecast and allows you to grab your local weather.
+ a simple weather app that shows the 5 day forecast and allows you to grab your local weather.
  
 ![alt text](https://i.imgur.com/DtgcJuD.jpg)
 
@@ -11,5 +11,4 @@ deployed site:
 utilizing:
 html
 css
-react
 & javascript
